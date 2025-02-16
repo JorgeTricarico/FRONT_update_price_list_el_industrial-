@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesador de Lista de Precios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Procesador de Lista de Precios</h1>
+        <div id="api-status" class="status offline">API Desconectada</div>
+        <button id="wake-api">Activar API</button>
+        <form id="upload-form">
+            <input type="file" id="file-input" accept=".xlsx">
+            <button type="submit" id="upload-button" disabled>Subir Archivo</button>
+        </form>
+        <div id="loading" class="hidden">Procesando...</div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
